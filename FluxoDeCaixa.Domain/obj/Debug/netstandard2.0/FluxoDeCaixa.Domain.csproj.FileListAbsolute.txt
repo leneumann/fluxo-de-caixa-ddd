@@ -1,0 +1,12 @@
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\bin\Debug\netstandard2.0\FluxoDeCaixa.Domain.deps.json
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\bin\Debug\netstandard2.0\FluxoDeCaixa.Domain.dll
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\bin\Debug\netstandard2.0\FluxoDeCaixa.Domain.pdb
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.csprojAssemblyReference.cache
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.csproj.CoreCompileInputs.cache
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.AssemblyInfoInputs.cache
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.AssemblyInfo.cs
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.dll
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.pdb
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\bin\Debug\netstandard2.0\FluxoDeCaixa.Shared.dll
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\bin\Debug\netstandard2.0\FluxoDeCaixa.Shared.pdb
+C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Domain\obj\Debug\netstandard2.0\FluxoDeCaixa.Domain.csproj.CopyComplete
