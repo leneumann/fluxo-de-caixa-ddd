@@ -1,9 +1,0 @@
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\bin\Debug\netstandard2.0\FluxoDeCaixa.Shared.deps.json
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\bin\Debug\netstandard2.0\FluxoDeCaixa.Shared.dll
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\bin\Debug\netstandard2.0\FluxoDeCaixa.Shared.pdb
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.csprojAssemblyReference.cache
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.csproj.CoreCompileInputs.cache
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.AssemblyInfoInputs.cache
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.AssemblyInfo.cs
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.dll
-C:\Users\leandro.neumann\OneDrive - Private\OneDrive\cursos\udemy-modelando-dominios-ricos\FluxoDeCaixa\FluxoDeCaixa.Shared\obj\Debug\netstandard2.0\FluxoDeCaixa.Shared.pdb
