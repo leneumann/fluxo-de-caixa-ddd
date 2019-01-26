@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using FluxoDeCaixa.Domain.ValueObjects;
+using FluxoDeCaixa.Domain.Livro;
 
-namespace FluxoDeCaixa.Domain.Entities
+namespace FluxoDeCaixa.Domain.Livro
 {
     public class LivroCaixa
     {

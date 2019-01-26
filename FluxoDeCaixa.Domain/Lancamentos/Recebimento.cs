@@ -1,10 +1,10 @@
 using System;
 
-namespace FluxoDeCaixa.Domain.Entities
+namespace Lancamentos
 {
-    public class LancamentoFinanceiro
+    public class Recebimento
     {
-        public LancamentoFinanceiro(TiposDeLancamento tipo,
+        public Recebimento(
                                     string descricao,
                                     string contaDestino,
                                     string bancoDestino,
@@ -14,7 +14,7 @@ namespace FluxoDeCaixa.Domain.Entities
                                     decimal valorEncargos,
                                     DateTime dataDeLancamento)
         {
-            Tipo = tipo;
+
             Descricao = descricao;
             ContaDestino = contaDestino;
             BancoDestino = bancoDestino;
@@ -25,7 +25,6 @@ namespace FluxoDeCaixa.Domain.Entities
             DataDeLancamento = dataDeLancamento;
         }
 
-        public TiposDeLancamento Tipo { get; private set; }
         public string Descricao { get; private set; }
         public string ContaDestino { get; private set; }
         public string BancoDestino { get; private set; }

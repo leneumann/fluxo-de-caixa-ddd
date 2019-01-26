@@ -1,6 +1,6 @@
 using System;
 
-namespace FluxoDeCaixa.Domain.ValueObjects
+namespace FluxoDeCaixa.Domain.Livro
 {
     public class Lancamento
     {

@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\FluxoDeCaixa.Domain\FluxoDeCaixa.Domain.csproj" />
     <ProjectReference Include="..\FluxoDeCaixa.Infrastructure\FluxoDeCaixa.Infrastructure.csproj" />
   </ItemGroup>
 
