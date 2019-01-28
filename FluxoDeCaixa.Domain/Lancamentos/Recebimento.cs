@@ -1,14 +1,13 @@
 using System;
 
-namespace Lancamentos
+
+namespace FluxoDeCaixa.Domain.Lancamentos
 {
-    public class Recebimento
+    public class Recebimento:Entity
     {
         public Recebimento(
                                     string descricao,
-                                    string contaDestino,
-                                    string bancoDestino,
-                                    TiposDeConta tipoDeConta,
+                                    Conta contaDestino,
                                     string documento,
                                     decimal valorLancamento,
                                     decimal valorEncargos,
@@ -17,18 +16,16 @@ namespace Lancamentos
 
             Descricao = descricao;
             ContaDestino = contaDestino;
-            BancoDestino = bancoDestino;
-            TipoDeConta = tipoDeConta;
             Documento = documento;
             ValorLancamento = valorLancamento;
             ValorEncargos = valorEncargos;
             DataDeLancamento = dataDeLancamento;
+
+            Validate(this, new ValidadorRecebimento());
         }
 
         public string Descricao { get; private set; }
-        public string ContaDestino { get; private set; }
-        public string BancoDestino { get; private set; }
-        public TiposDeConta TipoDeConta { get; private set; }
+        public Conta ContaDestino { get; private set; }
         public string Documento { get; private set; }
         public decimal ValorLancamento { get; private set; }
         public decimal ValorEncargos { get; private set; }

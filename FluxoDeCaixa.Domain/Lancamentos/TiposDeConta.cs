@@ -1,4 +1,4 @@
-namespace Lancamentos
+namespace FluxoDeCaixa.Domain.Lancamentos
 {
     public enum TiposDeConta
     {

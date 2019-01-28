@@ -1,8 +1,8 @@
 using System;
 
-namespace Lancamentos
+namespace FluxoDeCaixa.Domain.Lancamentos
 {
-    public class Pagamento
+    public class Pagamento:Entity
     {
         public Pagamento(
                                     string descricao,
