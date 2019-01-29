@@ -19,6 +19,8 @@ namespace FluxoDeCaixa.Domain.Lancamentos
             ValorLancamento = valorLancamento;
             ValorEncargos = valorEncargos;
             DataDeLancamento = dataDeLancamento;
+
+            Validate(this, new ValidadorPagamento());
         }
 
         public string Descricao { get; private set; }

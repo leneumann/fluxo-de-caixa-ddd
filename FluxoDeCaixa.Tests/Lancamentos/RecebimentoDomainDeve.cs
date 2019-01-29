@@ -5,14 +5,13 @@ using Xunit;
 namespace FluxoDeCaixa.Tests.Lancamentos
 {
 
-    public class RecebimentoTests
+    public class RecebimentoDomainDeve
     {
         [Fact]
         public void RecebimentoDeveEstarValido()
         {
             var contaDestino = new Conta("2", "23", TiposDeConta.Corrente);
             var recebimento = new Recebimento("Lancamento", contaDestino, "3345478827", 100m, 0m, DateTime.Now);
-
 
             Assert.True(recebimento.Valid);
         }
