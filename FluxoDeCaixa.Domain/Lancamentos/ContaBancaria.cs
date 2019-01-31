@@ -1,8 +1,10 @@
+using System;
+
 namespace FluxoDeCaixa.Domain.Lancamentos
 {
-    public class Conta
+    public class ContaBancaria
     {
-        public Conta(string contaDestino, string bancoDestino, TiposDeConta tipoDeConta)
+        public ContaBancaria(string contaDestino, string bancoDestino, string tipoDeConta)
         {
             ContaDestino = contaDestino;
             BancoDestino = bancoDestino;
@@ -11,6 +13,6 @@ namespace FluxoDeCaixa.Domain.Lancamentos
 
         public string ContaDestino { get; private set; }
         public string BancoDestino { get; private set; }
-        public TiposDeConta TipoDeConta { get; private set; }
+        public string TipoDeConta { get; private set; }
     }
 }

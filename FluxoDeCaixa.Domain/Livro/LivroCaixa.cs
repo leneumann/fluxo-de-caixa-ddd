@@ -11,9 +11,9 @@ namespace FluxoDeCaixa.Domain.Livro
         private IList<Lancamento> _saidas;
         private IList<Lancamento> _encargos;
 
-        public LivroCaixa(DateTime dataDoLivro, decimal valorTotal, double posicaoDoDia)
+        public LivroCaixa(DateTime dataDoMovimento, decimal valorTotal, double posicaoDoDia)
         {
-            DataDoLivro = dataDoLivro;
+            DataDoMovimento = dataDoMovimento;
             ValorTotal = valorTotal;
             PosicaoDoDia = posicaoDoDia;
             _entradas = new List<Lancamento>();
@@ -21,7 +21,7 @@ namespace FluxoDeCaixa.Domain.Livro
             _encargos = new List<Lancamento>();
         }
 
-        public DateTime DataDoLivro { get; private set; }
+        public DateTime DataDoMovimento { get; private set; }
         public IReadOnlyCollection<Lancamento> Entradas { get { return _entradas.ToArray(); } }
         public IReadOnlyCollection<Lancamento> Saidas { get { return _saidas.ToArray(); } }
         public IReadOnlyCollection<Lancamento> Encargos { get { return _encargos.ToArray(); } }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FluxoDeCaixa.Domain.Lancamentos;
+using FluxoDeCaixa.Infrastructure.Lancamentos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +28,7 @@ namespace FluxoDeCaixa.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddSingleton<ILancamentoRepository>(new MongoDBLancamentosRepository());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

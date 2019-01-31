@@ -1,3 +1,4 @@
+using System;
 using FluxoDeCaixa.Domain.Lancamentos;
 
 namespace FluxoDeCaixa.Application.Lancamentos
@@ -13,10 +14,12 @@ namespace FluxoDeCaixa.Application.Lancamentos
         }
         public ICommandResult Handle(CriarPagamentoCommand command)
         {
+            command.Validate();
+
             if (command.Invalid)
                 return new CommandResult(false, "Não foi possível efetuar o lançamento");
 
-            var contaDestino = new Conta(command.ContaDestino, command.BancoDestino, command.TipoDeConta);
+            var contaDestino = new ContaBancaria(command.ContaDestino, command.BancoDestino, command.TipoDeConta);
             var pagamento = new Pagamento(command.Descricao, contaDestino, command.Documento, command.ValorLancamento, command.ValorEncargos, command.DataDeLancamento);
 
             if (pagamento.Invalid)
@@ -30,12 +33,15 @@ namespace FluxoDeCaixa.Application.Lancamentos
 
         public ICommandResult Handle(CriarRecebimentoCommand command)
         {
+            command.Validate();
+            
             if (command.Invalid)
             {
                 AddNotifications(command.ValidationResult);
                 return new CommandResult(false, "Não foi possível efetuar o lançamento");
             }
-            var contaDestino = new Conta(command.ContaDestino, command.BancoDestino, command.TipoDeConta);
+            
+            var contaDestino = new ContaBancaria(command.ContaDestino, command.BancoDestino, command.TipoDeConta);
             var recebimento = new Recebimento(command.Descricao, contaDestino, command.Documento, command.ValorLancamento, command.ValorEncargos, command.DataDeLancamento);
             if (recebimento.Invalid)
             {

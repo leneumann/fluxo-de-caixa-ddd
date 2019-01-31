@@ -15,7 +15,15 @@ namespace FluxoDeCaixa.Tests.Lancamentos
             var mockRepositorio = new Mock<ILancamentoRepository>();
             mockRepositorio.Setup(x => x.InserirPagamento(It.IsAny<Pagamento>()));
             var handler = new LancamentoHandler(mockRepositorio.Object);
-            var command = new CriarPagamentoCommand("Pagamento","343343",100m,0m,DateTime.Now,"2","231",TiposDeConta.Corrente);
+            var command = new CriarPagamentoCommand() { Descricao = "Pagamento", 
+                                                        Documento = "343343", 
+                                                        ValorLancamento = 100m, 
+                                                        ValorEncargos = 0m, 
+                                                        DataDeLancamento = 
+                                                        DateTime.Now, 
+                                                        ContaDestino = "2", 
+                                                        BancoDestino = "231", 
+                                                        TipoDeConta = "Corrente" };
 
             handler.Handle(command);
 

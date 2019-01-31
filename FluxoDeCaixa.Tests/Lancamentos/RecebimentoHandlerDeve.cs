@@ -15,8 +15,14 @@ namespace FluxoDeCaixa.Tests.Lancamentos
             var mockRepositorio = new Mock<ILancamentoRepository>();
             mockRepositorio.Setup(x => x.InserirRecebimento(It.IsAny<Recebimento>()));
             var handler = new LancamentoHandler(mockRepositorio.Object);
-            var command = new CriarRecebimentoCommand("Recebimento","343343",100m,0m,DateTime.Now,"2","231",TiposDeConta.Corrente);
-
+            var command = new CriarRecebimentoCommand() { Descricao = "Recebimento", 
+                                                        Documento = "343343", 
+                                                        ValorLancamento = 100m, 
+                                                        ValorEncargos = 0m, 
+                                                        DataDeLancamento = DateTime.Now, 
+                                                        ContaDestino = "2", 
+                                                        BancoDestino = "231", 
+                                                        TipoDeConta = "Corrente" };
             handler.Handle(command);
 
             Assert.False(handler.HasNotifications);

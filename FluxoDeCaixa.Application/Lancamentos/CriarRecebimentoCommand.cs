@@ -1,10 +1,12 @@
 using System;
+using FluentValidation;
 using FluxoDeCaixa.Domain.Lancamentos;
 
 namespace FluxoDeCaixa.Application.Lancamentos
 {
     public class CriarRecebimentoCommand : Command
     {
+        public override IValidator GetValidator() => new ValidadorCommandRecebimento();
         public string Descricao { get; set; }
         public string Documento { get; set; }
         public decimal ValorLancamento { get; set; }
@@ -12,20 +14,6 @@ namespace FluxoDeCaixa.Application.Lancamentos
         public DateTime DataDeLancamento { get; set; }
         public string ContaDestino { get; set; }
         public string BancoDestino { get; set; }
-        public TiposDeConta TipoDeConta { get; set; }
-
-        public CriarRecebimentoCommand(string descricao, string documento, decimal valorLancamento, decimal valorEncargos, DateTime dataDeLancamento, string contaDestino, string bancoDestino, TiposDeConta tipoDeConta)
-        {
-            Descricao = descricao;
-            Documento = documento;
-            ValorLancamento = valorLancamento;
-            ValorEncargos = valorEncargos;
-            DataDeLancamento = dataDeLancamento;
-            ContaDestino = contaDestino;
-            BancoDestino = bancoDestino;
-            TipoDeConta = tipoDeConta;
-
-            Validate(this, new ValidadorCommandRecebimento());
-        }
+        public string TipoDeConta { get; set; }
     }
 }

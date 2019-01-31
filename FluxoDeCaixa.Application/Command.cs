@@ -9,9 +9,10 @@ namespace FluxoDeCaixa.Application
         public bool Invalid => !Valid;
         public ValidationResult ValidationResult { get; private set; }
 
-        public bool Validate<T>(T command, AbstractValidator<T> validator)
+        public abstract IValidator GetValidator();
+        public bool Validate()
         {
-            ValidationResult = validator.Validate(command);
+            ValidationResult = GetValidator().Validate(this);
             return Valid = ValidationResult.IsValid;
         }
     }
